@@ -7,8 +7,8 @@ docker push martinsak/multi-server:latest
 docker push martinsak/multi-worker:latest
 
 docker push martinsak/multi-client:$SHA
-docker martinsak/multi-server:$SHA
-docker martinsak/multi-worker:$SHA
+docker push martinsak/multi-server:$SHA
+docker push martinsak/multi-worker:$SHA
 
 kubectl apply -f k8s
 
